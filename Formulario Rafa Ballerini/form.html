@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulariocss.css" media="screen">
+    <title>Cadastro de Biólogos</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Cadastro de Biólogos</h1>
+        <p id="subtitulo">Complete suas Informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <!---->
+        <div class="campo">
+            <label>De qual lado da biologia você está?</label>
+            <label>
+                <input type="radio" name="biologo" value="laboratório" checked  > Laboratório
+            </label>
+            <label> 
+                <input type="radio" name="biologo" value="campo"> Campo
+            </label>
+            <label> 
+                <input type="radio" name="biologo" value="pesquisador"> Pesquisador
+            </label>
+            <label> 
+                <input type="radio" name="biologo" value="coorporativo"> Coorporativo
+            </label>
+        </div>
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+                <option>Consultor</option>
+                <option>Analista I - III</option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong> Selecione os conhecimentos que utiliza:</strong></label>
+                <br>
+                <input type="checkbox" id="conhecimento1" name="conhecimento1" value="Coleta e Identificação">
+                <label for="conhecimento1">Coleta e Identificação</label>
+                
+                <input type="checkbox" id="conhecimento2" name="conhecimento2" value="Amostragem">
+                <label for="conhecimento2"> Amostragem</label>
+                <br>
+                <input type="checkbox" id="conhecimento3" name="conhecimento3" value="taxonomia">
+                <label for="conhecimento3"> Taxonomia</label>
+                
+                <input type="checkbox" id="conhecimento4" name="conhecimento4" value="fotografia científica">
+                <label for="conhecimento4"> Fotografia Científica</label>
+                <br>
+                <input type="checkbox" id="conhecimento5" name="conhecimento5" value="Biologia Celular">
+                <label for="conhecimento5"> Biologia Celular</label>
+                
+                <input type="checkbox" id="conhecimento6" name="conhecimento6" value="Citogenômica">
+                <label for="conhecimento6"> Citogenômica</label>
+                <br>
+                <input type="checkbox" id="conhecimento7" name="conhecimento7" value="Educação Ambiental">
+                <label for="conhecimento7"> Educação Ambiental</label> 
+                <br>
+            </div>
+        </fieldset>
+        <!-- Caixa de texto -->
+         <div class="campo">
+            <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+            <textarea rows="1" style="width: 24em" id="experiencia" name="experiencia"></textarea>  
+        </div>
+        <br>
+        <!-- Botão para enviar o formulário -->
+         <button class="botao" type="submit" onsubmit="">Concluído</button> 
+                    
+    </form>
+</body>
+</html>
